@@ -1,0 +1,79 @@
+.container-pgInicial {
+    background-color: rgb(236, 236, 236);
+    height: 100%;   
+}
+
+
+/* ========================== CONTAINER CONTEUDO ====================== */
+.container-conteudo-pgInicial{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(236, 236, 236);
+}
+
+.container-conteudo-pgInicial .filtro-ordenacao{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.container-conteudo-pgInicial .filtro-ordenacao select{
+    background-color: rgb(236, 236, 236);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.container-conteudo-pgInicial .filtro-categoria{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.container-conteudo-pgInicial .filtro-categoria select{
+    background-color: rgb(236, 236, 236);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.container-pgInicial select:focus{
+    outline: none;
+}
+
+.cabecalho-conteudo-pgInicial{
+    /* background-color: burlywood; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ========================== CONTAINER CARDS ====================== */
+.container-cards-pgInicial{
+    align-self: center;
+    /* background-color: red; */
+    width: 1060px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1160px) {
+    .container-cards-pgInicial{
+        width: 790px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .container-cards-pgInicial{
+        width: 520px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+   
+    .cabecalho-conteudo-pgInicial h2{
+        display: none;
+    }
+}
+
+
+

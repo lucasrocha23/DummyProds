@@ -43,8 +43,8 @@ function Login(){
                 }
                 else{
                     setEmail(dados.email)
-                    setUsername(dados.username)
-                    setToken(dados.token)
+                    setUsername(dados.username)                    
+                    setToken(dados.accessToken)
                     navigate('/DummyProds/listaProdutos?pagina=1')
                 }
             })

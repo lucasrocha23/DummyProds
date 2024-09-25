@@ -22,7 +22,7 @@ interface Produto{
 const ITENS_P_PAGINA = 20
 
 function Inicial(){
-    const {token,email} = useAuth()
+    const {token} = useAuth()
 
     const [categorias, setCategorias] = useState<string[]>([])
 

@@ -33,7 +33,7 @@ function Cabecalho(){
     return (
         <div className="container-cabecalho">
             <h1 onClick={() => {
-                navigate('/DummyProds/listaProdutos?pesquisa=')
+                navigate('/DummyProds/listaProdutos?pesquisa=&pagina=1')
                 setPesquisa('')
             }}>DummyProds</h1>
             <div className="pesquisa">

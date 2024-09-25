@@ -11,7 +11,7 @@ interface PagProps{
 }
 
 function Paginacao({ultimo,pagina,setPagina}: PagProps){
-    var atual = pagina
+    let atual = pagina
     const primeiro = Math.max(atual !== ultimo? atual - QNT_ESQ : atual - (QNT_ESQ * 2) , 1)
 
     return(

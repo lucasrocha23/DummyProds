@@ -19,7 +19,7 @@ function Login(){
 
     useEffect(()=>{
         if(token){
-            navigate('/DummyProds/listaProdutos')
+            navigate('/DummyProds/listaProdutos?pagina=1')
         }
     },[])
 
@@ -45,7 +45,7 @@ function Login(){
                     setEmail(dados.email)
                     setUsername(dados.username)
                     setToken(dados.token)
-                    navigate('/DummyProds/listaProdutos')
+                    navigate('/DummyProds/listaProdutos?pagina=1')
                 }
             })
     }
